@@ -84,9 +84,12 @@ body {
 } */
 
 .glow-on-hover {
+    border-width: thin;
+    border-color: #005A82;
+    border-style: solid;
     min-width: 60px;
     min-height: 30px;
-    border: none;
+    /* border: none; */
     outline: none;
     font-weight: bold;
     font-size: 14px;
