@@ -17,28 +17,29 @@ function App() {
       .then(response => response.json())
       .then(data => {
         setChamp(data);
-      });
+      })
+      .catch(error => console.error('Error:', error));
   };
 
   return (
     <div className="App">
       <header className="App-header">
-      <Logo/>
+        <Logo />
         <h1>Champ Picker</h1>
       
-      <randomizer className="randomizer"> 
-        <button className='glow-on-hover'
-        type='button'
-        onClick={randomize}>Graj!</button>
-        <div className="p">
-          <p><strong>Top:</strong> {champ.top}</p>
-          <p><strong>Jg:</strong> {champ.jg}</p>
-          <p><strong>Mid:</strong> {champ.mid}</p>
-          <p><strong>Adc:</strong> {champ.adc}</p>
-          <p><strong>Supp:</strong> {champ.supp}</p>
-          <p><strong>Adc Player:</strong> {champ.adcplayer}</p>
-        </div>  
-      </randomizer>
+        <div className="randomizer"> 
+          <button className='glow-on-hover'
+            type='button'
+            onClick={randomize}>Graj!</button>
+          <div className="p">
+            <p><strong>Top:</strong> {champ.top}</p>
+            <p><strong>Jg:</strong> {champ.jg}</p>
+            <p><strong>Mid:</strong> {champ.mid}</p>
+            <p><strong>Adc:</strong> {champ.adc}</p>
+            <p><strong>Supp:</strong> {champ.supp}</p>
+            <p><strong>Adc Player:</strong> {champ.adcplayer}</p>
+          </div>  
+        </div>
       </header>
     </div>
   );
