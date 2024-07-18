@@ -26,7 +26,7 @@ function App() {
       <Logo/>
         <h1>Champ Picker</h1>
       
-      <randomizer className="randomizer"> 
+      <div className="randomizer"> 
         <button className='glow-on-hover'
         type='button'
         onClick={randomize}>Graj!</button>
