@@ -38,7 +38,7 @@ function App() {
           <p><strong>Supp:</strong> {champ.supp}</p>
           <p><strong>Adc Player:</strong> {champ.adcplayer}</p>
         </div>  
-      </randomizer>
+      </div>
       </header>
     </div>
   );
