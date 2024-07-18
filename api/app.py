@@ -47,7 +47,7 @@ class ChampPicker:
                 'adcplayer': self.adcplayer[adcplayernum]
             }
 
-@app.route('/api/randomize', methods=['GET'])
+@app.route('/randomize', methods=['GET'])
 def randomize():
     date_picker = ChampPicker()
     result = date_picker.randomizer()
