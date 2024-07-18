@@ -13,7 +13,7 @@ function App() {
   });
 
   const randomize = () => {
-    fetch('http://127.0.0.1:5000/randomize')
+    fetch('/api/randomize')
       .then(response => response.json())
       .then(data => {
         setChamp(data);
