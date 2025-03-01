@@ -1,3 +1,58 @@
+# Champion Picker
+
+A League of Legends champion randomizer application with a React frontend and Flask backend.
+
+## Docker Setup
+
+This application is containerized using Docker, making it easy to run in any environment.
+
+### Prerequisites
+
+- [Docker](https://docs.docker.com/get-docker/)
+- [Docker Compose](https://docs.docker.com/compose/install/)
+
+### Running with Docker
+
+1. Clone the repository:
+   ```
+   git clone <repository-url>
+   cd champion-picker
+   ```
+
+2. Build and start the containers:
+   ```
+   docker compose up -d
+   ```
+
+3. Access the application:
+   - Frontend: http://localhost:80
+   - Backend API: http://localhost:5001/randomize
+
+4. Stop the containers:
+   ```
+   docker compose down
+   ```
+
+### Docker Commands
+
+- Rebuild containers after making changes:
+  ```
+  docker compose up -d --build
+  ```
+
+- View container logs:
+  ```
+  docker compose logs -f
+  ```
+
+- Access container shell:
+  ```
+  docker exec -it champion-picker-frontend sh  # For frontend
+  docker exec -it champion-picker-api sh  # For backend
+  ```
+
+## Development Without Docker
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
