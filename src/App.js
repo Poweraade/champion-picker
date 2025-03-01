@@ -13,7 +13,7 @@ function App() {
   });
 
   const randomize = () => {
-    fetch('http://127.0.0.1:5000/randomize')
+    fetch('/api/randomize')
       .then(response => response.json())
       .then(data => {
         setChamp(data);
@@ -26,7 +26,7 @@ function App() {
       <Logo/>
         <h1>Champ Picker</h1>
       
-      <randomizer className="randomizer"> 
+      <div className="randomizer"> 
         <button className='glow-on-hover'
         type='button'
         onClick={randomize}>Graj!</button>
@@ -38,7 +38,7 @@ function App() {
           <p><strong>Supp:</strong> {champ.supp}</p>
           <p><strong>Adc Player:</strong> {champ.adcplayer}</p>
         </div>  
-      </randomizer>
+      </div>
       </header>
     </div>
   );

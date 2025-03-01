@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  # Backend API service
+  api:
+    image: poweraade/lol-champion-picker:api
+    ports:
+      - "5001:5000"
+    container_name: champion-picker-api
+    restart: unless-stopped
+    networks:
+      - app-network
+
+  # Frontend service
+  frontend:
+    image: poweraade/lol-champion-picker:frontend
+    ports:
+      - "80:80"
+    container_name: champion-picker-frontend
+    restart: unless-stopped
+    depends_on:
+      - api
+    networks:
+      - app-network
+
+# Define a network for the services
+networks:
+  app-network:
+    driver: bridge 

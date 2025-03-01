@@ -7,12 +7,12 @@ CORS(app)  # Pozwala na Cross-Origin Resource Sharing
 
 class ChampPicker:
     def __init__(self):
-        self.top = ['Ornn'] #seba
+        self.top = ['Ornn', 'Mundo', 'Garen', 'Malphite', 'Nasus', 'Skarner'] #seba
         self.jg = ['Viego', 'Amumu', 'Poppy', 'Morgana', 'Diana', 'Lilia', 'Singed', 'Rammus','Udyr','Nocturne','Wukong','Gwen','Master Yi','Kayn'] #michal
-        self.mid = ['Annie', 'Vex', 'Sylas','Orianna'] #filip
+        self.mid = ['Annie', 'Vex', 'Sylas','Orianna','Ahri'] #filip
         self.adc1 = ['Ezreal','Brand','Swain'] #adc rudy
         self.adc2 = ['MF', 'Jinx', 'Jhin','Vayne',"Kai'Sa",'Tristana','Nilah','Varus','Caitlyn','Ashe','Twitch','Jinx',"Kog'Maw",'Zeri','Ziggs'] #adc milosz
-        self.supp1 = ['Milio','Alistar', 'Braum','Rakan','Lulu','Soraka'] #supp milosz
+        self.supp1 = ['Milio','Alistar', 'Braum','Rakan','Lulu','Soraka','Nami', 'Janna'] #supp milosz
         self.supp2 = ['Leona', 'Nautilius', 'Pyke','Zyra','Brand','Lux','Morgana','Swain','Blitzcrank','Zilean','Rakan','Karma','Amumu','Maokai','Rell','Tresh','Alistar','Neeko','Seraphine','Sona'] #supp rudy
         self.adcplayer = ['Rudy', 'Miłosz'] #wybor adc
 

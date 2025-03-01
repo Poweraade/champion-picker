@@ -1,0 +1,4 @@
+# Requirements for the Docker container - minimal dependencies needed for the API
+Flask==3.0.2
+flask-cors==4.0.0
+Werkzeug==3.0.1 
